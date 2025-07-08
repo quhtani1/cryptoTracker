@@ -1,0 +1,99 @@
+.crypto-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.crypto-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.crypto-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.crypto-card:hover,
+.crypto-card:focus {
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+  outline: none;
+}
+
+.rank {
+  font-weight: 700;
+  font-size: 1.25rem;
+  width: 30px;
+  text-align: center;
+  color: #4f46e5;
+  user-select: none;
+}
+
+.coin-logo {
+  margin: 0 1rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.coin-info {
+  flex-grow: 1;
+}
+
+.coin-name {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.coin-symbol {
+  font-weight: 400;
+  color: #6b7280;
+  margin-left: 0.5rem;
+}
+
+.coin-price {
+  margin: 0.25rem 0 0;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.coin-change {
+  font-weight: 700;
+  font-size: 1.1rem;
+  min-width: 70px;
+  text-align: right;
+  user-select: none;
+}
+
+.positive {
+  color: #16a34a;
+}
+
+.negative {
+  color: #dc2626;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 50px;
+  color: #374151;
+}
+
+.error {
+  color: #dc2626;
+}
